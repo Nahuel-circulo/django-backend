@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=jlvc##j+(&)p#o4=dhw9veo0ud1m3_qql)3&da2gs9ijj@nju'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -58,6 +58,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
+
+
 ]
 
 ROOT_URLCONF = 'Proyecto_API.urls'
@@ -87,11 +89,10 @@ WSGI_APPLICATION = 'Proyecto_API.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST':'localhost',
-        'PORT':'3306',
-        'USER':'root',
-        'PASSWORD': 'Nicolas1',
-        'NAME': 'sentidos_api',
+        'NAME': 'Nahuelnp$sentidos_api',
+        'HOST':'Nahuelnp.mysql.pythonanywhere-services.com',
+        'USER':'Nahuelnp',
+        'PASSWORD': 'Nicolas#1',
         'OPTIONS':{
             'init_command':"SET sql_mode='STRICT_TRANS_TABLES'"
         }
